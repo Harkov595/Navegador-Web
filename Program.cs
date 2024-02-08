@@ -9,7 +9,7 @@ namespace Navegador_Web
     static class Program
     {
         /// <summary>
-        /// Punto de entrada principal para la aplicación.
+        /// Punto de entrada principal para la aplicación.EDU
         /// </summary>
         [STAThread]
         static void Main()
