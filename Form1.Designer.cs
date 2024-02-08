@@ -30,7 +30,6 @@ namespace Navegador_Web
         private void InitializeComponent()
         {
             this.Ir = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +41,7 @@ namespace Navegador_Web
             // 
             // Ir
             // 
-            this.Ir.Location = new System.Drawing.Point(205, 507);
+            this.Ir.Location = new System.Drawing.Point(854, 90);
             this.Ir.Name = "Ir";
             this.Ir.Size = new System.Drawing.Size(105, 42);
             this.Ir.TabIndex = 1;
@@ -50,26 +49,19 @@ namespace Navegador_Web
             this.Ir.UseVisualStyleBackColor = true;
             this.Ir.Click += new System.EventHandler(this.Ir_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(594, 507);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 42);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "https://music.youtube.com/",
-            "https://www.youtube.com/"});
+            "https://www.youtube.com/",
+            "https://www.bing.com/search?q"});
             this.comboBox1.Location = new System.Drawing.Point(41, 102);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(774, 21);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Tag = "";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -77,7 +69,7 @@ namespace Navegador_Web
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(853, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(971, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -101,9 +93,9 @@ namespace Navegador_Web
             this.webView21.AllowExternalDrop = true;
             this.webView21.CreationProperties = null;
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView21.Location = new System.Drawing.Point(41, 172);
+            this.webView21.Location = new System.Drawing.Point(12, 157);
             this.webView21.Name = "webView21";
-            this.webView21.Size = new System.Drawing.Size(784, 306);
+            this.webView21.Size = new System.Drawing.Size(934, 466);
             this.webView21.TabIndex = 6;
             this.webView21.ZoomFactor = 1D;
             this.webView21.Click += new System.EventHandler(this.webView21_Click);
@@ -112,10 +104,9 @@ namespace Navegador_Web
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 637);
+            this.ClientSize = new System.Drawing.Size(971, 635);
             this.Controls.Add(this.webView21);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.Ir);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
@@ -131,7 +122,6 @@ namespace Navegador_Web
 
         #endregion
         private System.Windows.Forms.Button Ir;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
