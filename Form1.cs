@@ -48,7 +48,7 @@ namespace Navegador_Web
             String uri = args.Uri;
             if (!uri.StartsWith("https://"))
             {
-                webView21.CoreWebView2.ExecuteScriptAsync($"alert('{uri} is not safe, try an https link')");
+                //webView21.CoreWebView2.ExecuteScriptAsync($"alert('{uri} is not safe, try an https link')");
                 args.Cancel = true;
             }
         }
@@ -63,7 +63,7 @@ namespace Navegador_Web
 
         private void toolStripComboBox1_Click(object sender, EventArgs e)
         {
-         //   webView21.GoHome();
+           
         }
 
         private void Ir_Click(object sender, EventArgs e)
