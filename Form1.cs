@@ -11,9 +11,9 @@ using Microsoft.Web.WebView2.Core;
 
 namespace Navegador_Web 
 {
-    public partial class Form1 : Form
+    public partial class Navegador_Web : Form
     {
-        public Form1()
+        public Navegador_Web()
         {
             InitializeComponent();
             this.Resize += new System.EventHandler(this.Form_Resize);

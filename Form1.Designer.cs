@@ -1,7 +1,7 @@
 ﻿
 namespace Navegador_Web
 {
-    partial class Form1
+    partial class Navegador_Web
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -41,7 +41,7 @@ namespace Navegador_Web
             // 
             // Ir
             // 
-            this.Ir.Location = new System.Drawing.Point(854, 90);
+            this.Ir.Location = new System.Drawing.Point(818, 90);
             this.Ir.Name = "Ir";
             this.Ir.Size = new System.Drawing.Size(105, 42);
             this.Ir.TabIndex = 1;
@@ -58,7 +58,7 @@ namespace Navegador_Web
             "https://www.bing.com/search?q"});
             this.comboBox1.Location = new System.Drawing.Point(41, 102);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(774, 21);
+            this.comboBox1.Size = new System.Drawing.Size(722, 21);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Tag = "";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -93,14 +93,14 @@ namespace Navegador_Web
             this.webView21.AllowExternalDrop = true;
             this.webView21.CreationProperties = null;
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView21.Location = new System.Drawing.Point(12, 157);
+            this.webView21.Location = new System.Drawing.Point(12, 147);
             this.webView21.Name = "webView21";
             this.webView21.Size = new System.Drawing.Size(934, 466);
             this.webView21.TabIndex = 6;
             this.webView21.ZoomFactor = 1D;
             this.webView21.Click += new System.EventHandler(this.webView21_Click);
             // 
-            // Form1
+            // Navegador_Web
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,7 +109,7 @@ namespace Navegador_Web
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Ir);
             this.Controls.Add(this.menuStrip1);
-            this.Name = "Form1";
+            this.Name = "Navegador_Web";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
