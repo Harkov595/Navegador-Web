@@ -35,13 +35,14 @@ namespace Navegador_Web
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            this.button2Guardar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
             this.SuspendLayout();
             // 
             // Ir
             // 
-            this.Ir.Location = new System.Drawing.Point(818, 90);
+            this.Ir.Location = new System.Drawing.Point(765, 90);
             this.Ir.Name = "Ir";
             this.Ir.Size = new System.Drawing.Size(105, 42);
             this.Ir.TabIndex = 1;
@@ -52,11 +53,7 @@ namespace Navegador_Web
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "https://music.youtube.com/",
-            "https://www.youtube.com/",
-            "https://www.bing.com/search?q"});
-            this.comboBox1.Location = new System.Drawing.Point(41, 102);
+            this.comboBox1.Location = new System.Drawing.Point(12, 90);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(722, 21);
             this.comboBox1.TabIndex = 4;
@@ -69,7 +66,7 @@ namespace Navegador_Web
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(971, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1161, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -95,16 +92,27 @@ namespace Navegador_Web
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
             this.webView21.Location = new System.Drawing.Point(12, 147);
             this.webView21.Name = "webView21";
-            this.webView21.Size = new System.Drawing.Size(934, 466);
+            this.webView21.Size = new System.Drawing.Size(787, 448);
             this.webView21.TabIndex = 6;
             this.webView21.ZoomFactor = 1D;
             this.webView21.Click += new System.EventHandler(this.webView21_Click);
+            // 
+            // button2Guardar
+            // 
+            this.button2Guardar.Location = new System.Drawing.Point(13, 620);
+            this.button2Guardar.Name = "button2Guardar";
+            this.button2Guardar.Size = new System.Drawing.Size(121, 56);
+            this.button2Guardar.TabIndex = 7;
+            this.button2Guardar.Text = "Guardar";
+            this.button2Guardar.UseVisualStyleBackColor = true;
+            this.button2Guardar.Click += new System.EventHandler(this.button2Guardar_Click);
             // 
             // Navegador_Web
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(971, 635);
+            this.ClientSize = new System.Drawing.Size(1161, 778);
+            this.Controls.Add(this.button2Guardar);
             this.Controls.Add(this.webView21);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Ir);
@@ -127,6 +135,7 @@ namespace Navegador_Web
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
+        private System.Windows.Forms.Button button2Guardar;
     }
 }
 

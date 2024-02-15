@@ -13,6 +13,8 @@ namespace Navegador_Web
 {
     public partial class Navegador_Web : Form
     {
+        private readonly string str_ruta;
+
         public Navegador_Web()
         {
             InitializeComponent();
@@ -92,7 +94,7 @@ namespace Navegador_Web
 
         private void webView21_Click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -104,5 +106,13 @@ namespace Navegador_Web
         {
 
         }
+
+        private void button2Guardar_Click(object sender, EventArgs e)
+        {
+            string str_textoArchivo = System.IO.File.ReadAllText(@"C:\Historial\archivo.txt" + str_ruta);
+            //  reader.Close();
+
+        }
+
     }
 }
