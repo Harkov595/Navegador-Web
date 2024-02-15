@@ -42,7 +42,7 @@ namespace Navegador_Web
             // 
             // Ir
             // 
-            this.Ir.Location = new System.Drawing.Point(765, 90);
+            this.Ir.Location = new System.Drawing.Point(761, 27);
             this.Ir.Name = "Ir";
             this.Ir.Size = new System.Drawing.Size(105, 42);
             this.Ir.TabIndex = 1;
@@ -99,9 +99,9 @@ namespace Navegador_Web
             // 
             // button2Guardar
             // 
-            this.button2Guardar.Location = new System.Drawing.Point(13, 620);
+            this.button2Guardar.Location = new System.Drawing.Point(761, 90);
             this.button2Guardar.Name = "button2Guardar";
-            this.button2Guardar.Size = new System.Drawing.Size(121, 56);
+            this.button2Guardar.Size = new System.Drawing.Size(105, 42);
             this.button2Guardar.TabIndex = 7;
             this.button2Guardar.Text = "Guardar";
             this.button2Guardar.UseVisualStyleBackColor = true;

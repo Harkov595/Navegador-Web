@@ -109,10 +109,33 @@ namespace Navegador_Web
 
         private void button2Guardar_Click(object sender, EventArgs e)
         {
-            string str_textoArchivo = System.IO.File.ReadAllText(@"C:\Historial\archivo.txt" + str_ruta);
-            //  reader.Close();
 
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            //Directorio en donde se va a iniciar la busqueda
+            openFileDialog1.InitialDirectory = "C:\Historial\archivo.txt";
+            //Tipos de archivos que se van a buscar, en este caso archivos de texto con extensión .txt
+            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+
+            //Guardamos en una variable el nombre del archivo que abrimos
+            string fileName = openFileDialog1.FileName;
+
+            //Abrimos el archivo, en este caso lo abrimos para lectura
+            FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+            StreamReader reader = new StreamReader(stream);
+
+            //Un ciclo para leer el archivo hasta el final del archivo
+            //Lo leído se va guardando en un control richTextBox
+            while (reader.Peek() > -1)
+            //Esta linea envía el texto leído a un control richTextBox, se puede cambiar para que
+            //lo muestre en otro control por ejemplo un combobox
+            {
+                richTextBox1.AppendText(reader.ReadLine());
+            }
+            //Cerrar el archivo, esta linea es importante porque sino despues de correr varias veces el programa daría error de que el archivo quedó abierto muchas veces. Entonces es necesario cerrarlo despues de terminar de leerlo.
+            reader.Close();
         }
+    }
 
     }
 }
