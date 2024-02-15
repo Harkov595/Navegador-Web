@@ -65,7 +65,7 @@ namespace Navegador_Web
 
         private void toolStripComboBox1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void Ir_Click(object sender, EventArgs e)
@@ -94,7 +94,7 @@ namespace Navegador_Web
 
         private void webView21_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -119,21 +119,23 @@ namespace Navegador_Web
 
             //Guardamos en una variable el nombre del archivo que abrimos
             string fileName = openFileDialog1.FileName;
+            /*
+                        //Abrimos el archivo, en este caso lo abrimos para lectura
+                        FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+                        StreamReader reader = new StreamReader(stream);
 
-            //Abrimos el archivo, en este caso lo abrimos para lectura
-            FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
-            StreamReader reader = new StreamReader(stream);
-
-            //Un ciclo para leer el archivo hasta el final del archivo
-            //Lo leído se va guardando en un control richTextBox
-            while (reader.Peek() > -1)
-            //Esta linea envía el texto leído a un control richTextBox, se puede cambiar para que
-            //lo muestre en otro control por ejemplo un combobox
-            {
-                richTextBox1.AppendText(reader.ReadLine());
-            }
-            //Cerrar el archivo, esta linea es importante porque sino despues de correr varias veces el programa daría error de que el archivo quedó abierto muchas veces. Entonces es necesario cerrarlo despues de terminar de leerlo.
-            reader.Close();
+                        //Un ciclo para leer el archivo hasta el final del archivo
+                        //Lo leído se va guardando en un control richTextBox
+                        while (reader.Peek() > -1)
+                        //Esta linea envía el texto leído a un control richTextBox, se puede cambiar para que
+                        //lo muestre en otro control por ejemplo un combobox
+                        {
+                            richTextBox1.AppendText(reader.ReadLine());
+                        }
+                        //Cerrar el archivo, esta linea es importante porque sino despues de correr varias veces el programa daría error de que el archivo quedó abierto muchas veces. Entonces es necesario cerrarlo despues de terminar de leerlo.
+                        reader.Close();
+                    }
+            */
         }
     }
 
